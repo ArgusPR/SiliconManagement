@@ -1,0 +1,49 @@
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(115, 132, 206);">
+  <div class="container">
+      <a class="navbar-brand" href="#">
+          <img src="assets/logo2.svg" alt="" width="50" height="50">
+          <strong>Silicon Institute</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+              <li class="nav-item">
+                  <a class="nav-link" aria-current="page" routerLink="/home" routerLinkActive="active">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" aria-current="page" routerLink="/about" routerLinkActive="active">About</a>
+              </li>
+
+              <div class="dropdown">
+                <button class="dropbtn mb-10  ms-auto">Add Users</button>
+                <div class="dropdown-content">
+                  <a class="nav-link" aria-current="page" routerLink="/add-student" routerLinkActive="active">Add Student</a>
+                  <a class="nav-link" aria-current="page" routerLink="/add-teacher" routerLinkActive="active">Add Teacher</a>
+                  <a class="nav-link" aria-current="page" routerLink="/add-class" routerLinkActive="active">Add Class</a>
+                </div>
+              </div>
+
+              <div class="dropdown">
+                <button class="dropbtn mb-10  ms-auto">Manage Users</button>
+                <div class="dropdown-content">
+                  <a class="nav-link" aria-current="page" routerLink="/student" routerLinkActive="active">Manage Student</a>
+                  <a class="nav-link" aria-current="page" routerLink="/teacher" routerLinkActive="active">Manage Teacher</a>
+                  <a class="nav-link" aria-current="page" routerLink="/class" routerLinkActive="active">Manage Class</a>
+                </div>
+              </div>
+
+              <li class="nav-item">
+                  <a class="nav-link" aria-current="page" routerLink="/contact" routerLinkActive="active">Contact</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" aria-current="page" routerLink="/login" routerLinkActive="active">Login</a>
+              </li>
+          </ul>
+
+      </div>
+  </div>
+</nav>

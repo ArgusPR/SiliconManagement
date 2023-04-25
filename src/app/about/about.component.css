@@ -1,0 +1,17 @@
+.img-fluid{
+    max-width: 100%; 
+    height: fit-content;
+    opacity: 0.5;
+}
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+  }
+  .centered {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    transform: translate(-20%, -20%);
+  }

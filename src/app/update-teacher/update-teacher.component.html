@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<div class="col-md-6 offset-md-3 mt-2 mb-2">
+    <h3 style="text-align:center;">Update Teacher</h3>
+
+<form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+        <label>User Role</label>
+        <input type="text" class="form-control" id="userRole"
+            [(ngModel)] = "teacher.role" name="userRole" required>
+    </div>
+    <div class="form-group">
+        <label>Full Name</label>
+        <input type="text" class="form-control" id="fullName"
+            [(ngModel)] = "teacher.fullName" name="fullName" required>
+    </div>
+    <div class="form-group">
+        <label>DOB</label>
+        <input type="text" class="form-control" id="dob"
+            [(ngModel)] = "teacher.dob" name="dob" required>
+    </div>
+    <div class="form-group">
+        <label>Phone #</label>
+        <input type="text" class="form-control" id="phone"
+            [(ngModel)] = "teacher.phone" name="phone" required>
+    </div>
+    <div class="form-group">
+        <label>Gender</label>
+        <input type="text" class="form-control" id="gender"
+            [(ngModel)] = "teacher.gender" name="gender" required>
+    </div>
+    <div class="form-group">
+        <label>Current Address</label>
+        <input type="textarea" class="form-control" id="cAddress"
+            [(ngModel)] = "teacher.currentAddress" name="cAddress" required>
+    </div>
+    <div class="form-group">
+        <label>Permanent Address</label>
+        <input type="textarea" class="form-control" id="pAddress"
+            [(ngModel)] = "teacher.permanentAddress" name="pAddress" required>
+    </div>
+    <div class="form-group">
+        <label>Subject Taught</label>
+        <input type="text" class="form-control" id="sub"
+            [(ngModel)] = "teacher.subTaught" name="sub" required>
+    </div>
+    <div class="form-group">
+        <label>Qualification</label>
+        <input type="text" class="form-control" id="qualification"
+            [(ngModel)] = "teacher.qualification" name="qualification" required>
+    </div>
+    <div class="col-md-12 text-center">
+    <button class="btn btn-success" type="submit">Update Teacher</button>
+</div>
+</form>
+</div>
+

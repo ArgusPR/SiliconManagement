@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<div class="col-md-6 offset-md-3 mt-2 mb-2">
+    <h3 style="text-align:center;">Add Class</h3>
+
+    <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+        <label>Standard</label>
+        <input type="number" class="form-control" id="className"
+            [(ngModel)] = "classes.className" name="className" required>
+    </div>
+    <div class="form-group">
+        <label>Teacher ID</label>
+        <input type="number" class="form-control" id="tid"
+            [(ngModel)] = "classes.teacherId" name="tid" required>
+    </div>
+    <div class="col-md-12 text-center">
+        <button class="btn btn-success" type="submit">Add Class</button>
+    </div>
+    </form>
+</div>

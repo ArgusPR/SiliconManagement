@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<div class="container">
+    <h2 style="text-align: center;">Student List</h2>
+
+<table class="table table-dark table-hover table-striped table-bordered table-sm">
+    <thead style="text-align: center;">
+        <tr>
+            <th>User Role</th>
+            <th>Full Name</th>
+            <th>DOB</th>
+            <th>Phone #</th>
+            <th>Gender</th>
+            <th>Current Address</th>
+            <th>Permanent Address</th>
+            <th>Hobbies</th>
+            <th>Standard</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let student of students">
+            <td>{{student.userDetails.role}}</td>
+            <td>{{student.userDetails.fullName}}</td>
+            <td>{{student.userDetails.dob}}</td>
+            <td>{{student.userDetails.phone}}</td>
+            <td>{{student.userDetails.gender}}</td>
+            <td>{{student.userDetails.currentAddress}}</td>
+            <td>{{student.userDetails.permanentAddress}}</td>
+            <td>{{student.hobbies}}</td>
+            <td>{{student.standard}}</td>
+            <td>
+                <button (click)="updateStudent(student.studId)" class="btn btn-info" style="margin-left: 10px;"> Update</button>
+                <button (click)="deleteStudent(student.studId)" class="btn btn-danger" style="margin-left: 10px;"> Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>

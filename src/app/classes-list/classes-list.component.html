@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<div class="container" style="width: 50%;">
+    <h2 style="text-align: center;">Class List</h2>
+
+<table class="table table-dark table-hover table-striped table-bordered table-sm">
+    <thead style="text-align: center;">
+        <tr>
+            <th>Standard</th>
+            <th>Teacher ID</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let class of classes">
+            <td>{{class.className}}</td>
+            <td>{{class.teacherId}}</td>
+            <td style="text-align: center;">
+                <button (click)="updateClass(class.className)" class="btn btn-info" style="margin-right: 10px;"> Update</button>
+                <button (click)="deleteClass(class.className)" class="btn btn-danger" style="margin-left: 10px;"> Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>
